@@ -18,11 +18,6 @@ def RGB(event, x, y, flags, param):
 cv2.namedWindow('RGB')
 cv2.setMouseCallback('RGB', RGB)
 tracker=Tracker()
-cy1=253  
-cy2=223
-cy3=121
-
-offset=6
 
 
 
