@@ -33,8 +33,7 @@ counter2=[]
 while True:
     ret, frame = video_capture.read()
     if not ret:
-        cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
-        continue
+        break
     
     frame=cv2.resize(frame,(1028,500))
   
