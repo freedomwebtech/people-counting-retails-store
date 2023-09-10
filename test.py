@@ -28,7 +28,7 @@ offset=6
 
 
 
-count=0
+
 area1=[(213,165),(200,189),(693,373),(697,341)]
 area2=[(195,199),(186,213),(683,404),(689,388)]
 er={}
@@ -38,10 +38,8 @@ counter2=[]
 while True:
     ret, frame = video_capture.read()
     if not ret:
-        break
-#    count += 1
-#    if count % 3 != 0:
-#        continue
+        cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
+        continue
     
     frame=cv2.resize(frame,(1028,500))
   
